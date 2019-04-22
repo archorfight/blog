@@ -1,5 +1,6 @@
 ---
-typora-root-url: ..\images
+
+typora-copy-images-to: assets
 ---
 
 *打油诗*
@@ -10,7 +11,9 @@ typora-root-url: ..\images
   > LIKE百分写最右，覆盖索引不写星；
   > 不等空值还有or，索引失效要少用;
 ### 01 mysql的体系结构
-![mysql体系结构](/mysql/mysql体系结构.png)
+
+![mysql体系结构](assets/mysql体系结构.png)
+
 ### 各大存储引擎介绍
 - 插拔式的存储引擎
 - 存储引擎是指制定在表之上的，即每一个库的每一张表都可以指定自己的存储引擎

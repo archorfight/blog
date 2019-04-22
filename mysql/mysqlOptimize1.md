@@ -66,7 +66,7 @@ KEY Advantages：
 4. To maintain data integrity，InnoDB supports FOREIGN KEY contains【支持外键关系保证数据完整性】
 #### 各存储引擎对比
 >[https://dev.mysql.com/doc/refman/5.7/en/storage-engines.html](https://dev.mysql.com/doc/refman/5.7/en/storage-engines.html)
->![存储引擎对比图](/mysql/存储引擎对比图.png)
+>![存储引擎对比图](assets/存储引擎对比图.png)
 
 ### 02 mysql体系结构和运行机理
 1. Client Connectors 接入方 支持协议很多
@@ -80,7 +80,7 @@ KEY Advantages：
 9. file system 文件系统，数据、日志（redo，undo）、索引、错误日志、查询记录、慢查询等
 ### 03 mysql查询优化详解
 ####  查询优化-查询执行的路径
-![mysql查询执行路径](/mysql/mysql查询执行路径.png)
+![mysql查询执行路径](assets/mysql查询执行路径.png)
 
    **各阶段:**
 - mysql 客户端/服务端通信

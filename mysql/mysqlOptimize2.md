@@ -485,7 +485,10 @@ commit；
      - 指定Redo log日志文件组中的数量 ``innodb_log_files_in_group ``默认为2
      - 指定Redo log每一个日志文件最大存储量``innodb_log_file_size``  默认48M 
      - 指定Redo log在``cache/buffer``中的buffer池大小``innodb_log_buffer_size`` 默认16M
-   - Redo buffer持久化Redo log的策略， Innodb_flush_log_at_trx_commit： 取值 0  每秒提交 Redo buffer  -->  Redo log  OS cache -->flush cache to disk[可能丢失一秒内 的事务数据] 取值 1  默认值，每次事务提交执行Redo buffer  -->  Redo log  OS cache -->flush cache to disk [最安全，性能最差的方式] 取值 2  每次事务提交执行Redo buffer  -->  Redo log  OS cache  再每一秒执行 ->flush cache to disk操作
+   - Redo buffer持久化Redo log的策略，`` Innodb_flush_log_at_trx_commit``：
+     -  取值 0  每秒提交 ``Redo buffer``  -->  ``Redo log  OS cache`` -->``flush cache to disk``[可能丢失一秒内 的事务数据] 
+     - 取值 1  默认值，每次事务提交执行``Redo buffer``  -->  ``Redo log  OS cache`` -->``flush cache to disk`` [最安全，性能最差的方式] 
+     - 取值 2  每次事务提交执行``Redo buffer``  -->  ``Redo log  OS cache `` 再每一秒执行 ->``flush cache to disk``操作
 
 # 四 配置优化
 

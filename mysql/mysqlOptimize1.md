@@ -195,7 +195,7 @@ select查询的序列号，标识执行的顺序
 <subqueryN> 由ID为N查询生产的结果
 
 **执行计划-type**
->访问类型，sql查询优化中一个很重要的指标，结果值从好到坏依次是： system > const > eq_ref > ref > range > index > ALL 
+>访问类型，sql查询优化中一个很重要的指标，结果值从好到坏依次是： system > const > eq_ref >>ref > range > index > ALL 
 
 - system：表只有一行记录（等于系统表），const类型的特例，基本不会出现，可以忽略不计
 - const：表示通过索引一次就找到了，const用于比较primary key 或者 unique索引
